@@ -43,5 +43,5 @@ document.getElementById('list').addEventListener('click', function(e) ){
 }
 5. What is the difference between preventDefault() and stopPropagation() methods?
 
-preventDefault() browser এর default behavior বন্ধ করে (যেমন form submit, link এ যাওয়া)
+preventDefault() browser এর default behavior বন্ধ করে 
 stopPropagation()  event কে parent এ bubble হতে বন্ধ করে
