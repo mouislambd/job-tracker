@@ -169,6 +169,12 @@
             job.status = job.status === 'interview' ? 'not-applied' : 'interview';
             updateCounts(); renderCards();
         }
+        
+    function handleRejected(id) {
+        const job = jobs.find(j => j.id === id);
+        job.status = job.status === 'rejected' ? 'not-applied' : 'rejected';
+        updateCounts(); renderCards();
+    }
 
        
         function handleDelete(id) {
