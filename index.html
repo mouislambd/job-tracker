@@ -170,17 +170,12 @@
             updateCounts(); renderCards();
         }
 
-        function handleRejected(id) {
-            const job = jobs.find(j => j.id === id);
-            job.status = job.status === 'rejected' ? 'not-applied' : 'rejected';
-            updateCounts(); renderCards();
-        }
-
+       
         function handleDelete(id) {
-            const idx = jobs.findIndex(j => j.id === id);
-            jobs.splice(idx, 1);
-            updateCounts(); renderCards();
-        }
+                const idx = jobs.findIndex(j => j.id === id);
+                jobs.splice(idx, 1);
+                updateCounts(); renderCards();
+            }
 
         document.querySelectorAll('.tab-btn').forEach(btn => {
             btn.addEventListener('click', () => {
